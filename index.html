@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cloud Computing Assignment 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing | Assignment 4</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        .container { border: 2px solid #0056b3; padding: 20px; display: inline-block; }
+        :root { --namal-blue: #003366; --accent: #00a8e8; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f7f9; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+        .card { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            border-top: 8px solid var(--namal-blue);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 { color: var(--namal-blue); margin-bottom: 5px; font-size: 24px; }
+        h2 { color: var(--accent); font-size: 18px; margin-bottom: 30px; font-weight: 400; }
+        .info-box { text-align: left; background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .info-item { margin: 10px 0; font-size: 16px; color: #333; }
+        .label { font-weight: bold; color: var(--namal-blue); min-width: 100px; display: inline-block; }
+        .status-badge { 
+            background: #d4edda; 
+            color: #155724; 
+            padding: 8px 15px; 
+            border-radius: 20px; 
+            font-size: 14px; 
+            display: inline-block;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Web Application - Cloud Computing</h1>
-        <p><strong>Name:</strong> Shehr Bano</p>
-        <p><strong>Registration Number:</strong> NUM-BSCS-2023-11</p>
-        <p id="status">Status: Initial Deployment</p>
+    <div class="card">
+        <h1>Assignment 4: Cloud Computing</h1>
+        <h2>GitHub & Azure Integration (CI/CD)</h2>
+        
+        <div class="info-box">
+            <div class="info-item"><span class="label">Name:</span> Shehr Bano</div>
+            <div class="info-item"><span class="label">Reg No:</span> NUM-BSCS-2023-11</div>
+            <div class="info-item"><span class="label">Course:</span> CS-350 Cloud Computing</div>
+        </div>
+
+        <div class="status-badge" id="status">
+            ✓ Status: CI/CD Deployment Successful
+        </div>
     </div>
 </body>
 </html>
